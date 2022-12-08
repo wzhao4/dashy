@@ -1,14 +1,5 @@
 ---
 appConfig:
-  auth:
-    enableKeycloak: true
-    keycloak:
-      serverUrl: http://172.27.192.1:8081
-      realm: dashy
-      clientId: dashy-client
-      legacySupport: true
-    enableGuestAccess: true
-    users: []
   theme: dracula
   layout: auto
   iconSize: large
