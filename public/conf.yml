@@ -1,47 +1,396 @@
----
-# Page meta info, like heading, footer text and nav links
+ appConfig:
+  auth:
+    enableKeycloak: true
+    keycloak:
+      serverUrl: http://172.27.192.1:8081
+      realm: dashy
+      clientId: dashy-client
+      legacySupport: true
+    enableGuestAccess: true
+    users: []
+  theme: dracula
+  layout: auto
+  iconSize: large
+  language: en
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheck: false
+  statusCheckInterval: 0
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: duckduckgo
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  hideComponents:
+    hideHeading: false
+    hideNav: true
+    hideSearch: false
+    hideSettings: true
+    hideFooter: false
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Health Science Editorial
+  description: Welcome to Editorial Dashboard
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
-appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+      target: newtab
+    - title: Documentation
+      path: https://dashy.to/docs
+      target: newtab
+  footerText: Wiley © Copyright 2022. All rights reserved.
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Jiayi Huang
+    icon: ''
+    items:
+      - title: OS
+        description: Orthopaedic Surgery
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/os/JWS-WOAI-JW-OrthopaedicSurgery-Cover-180x240px_en_US.jpg
+        url: https://mc.manuscriptcentral.com/os
+        target: newtab
+        id: 0_1033_os
+      - title: PRO6
+        description: Precision Radiation Oncology
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/pro6/PRO6COVER_en_US.jpg
+        url: https://mc.manuscriptcentral.com/PRO6
+        target: newtab
+        id: 1_1033_pro
+      - title: TCA
+        description: Thoracic Cancer
+        icon: https://mc.manuscriptcentral.com/societyimages/tca/tca%20cover.jpg
+        url: https://mc.manuscriptcentral.com/TCA
+        target: newtab
+        id: 2_1033_tca
+      - title: AAC2
+        description: Aging and Cancer
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/aac-journal/AAC2_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/aac-journal
+        target: newtab
+        id: 3_1033_aac
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+  - name: Scholar One
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - title: OS
+        description: Orthopaedic Surgery
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/os/JWS-WOAI-JW-OrthopaedicSurgery-Cover-180x240px_en_US.jpg
+        url: https://mc.manuscriptcentral.com/os
+        target: newtab
+        id: 0_1038_os
+      - title: PRO6
+        description: Precision Radiation Oncology
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/pro6/PRO6COVER_en_US.jpg
+        url: https://mc.manuscriptcentral.com/PRO6
+        target: newtab
+        id: 1_1038_pro
+      - title: TCA
+        description: Thoracic Cancer
+        icon: https://mc.manuscriptcentral.com/societyimages/tca/tca%20cover.jpg
+        url: https://mc.manuscriptcentral.com/TCA
+        target: newtab
+        id: 2_1038_tca
+      - title: AAC2
+        description: Aging and Cancer
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/aac-journal/AAC2_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/aac-journal
+        target: newtab
+        id: 3_1038_aac
+      - title: cnsdr
+        icon: >-
+          https://onlinelibrary.wiley.com/cms/attachment/27862e51-5549-4787-8d98-87f7aa0c920a/cns.2018.24.issue-9.cover.gif
+        url: https://mc.manuscriptcentral.com/cnsdr
+        id: 4_1038_cnsdr
+      - title: CRJ
+        description: The Clinical Respiratory Journal
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/crj/CRJ_Cover_OA_en_US.png
+        url: https://mc.manuscriptcentral.com/crj
+        target: newtab
+        id: 5_1038_crj
+      - title: ped4
+        description: Pediatric Investigation
+        icon: https://mc.manuscriptcentral.com/societyimages/ped4/PED4_en_US.jpg
+        url: https://mc.manuscriptcentral.com/ped4
+        target: newtab
+        id: 6_1038_ped
+      - title: jcpt
+        description: Journal of Clinical Pharmacy and Therapeutics
+        icon: https://mc.manuscriptcentral.com/societyimages/jcpt/jcpt_cover.gif
+        url: https://mc.manuscriptcentral.com/jcpt
+        target: newtab
+        id: 7_1038_jcpt
+      - title: bdd
+        description: Biopharmaceutics and Drug Disposition
+        icon: https://mc.manuscriptcentral.com/societyimages/bdd/BDD.gif
+        url: https://mc.manuscriptcentral.com/bdd
+        target: newtab
+        id: 8_1038_bdd
+      - title: CAC2
+        description: Cancer Communication
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/cac2/CAC2_final%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/CAC2
+        target: newtab
+        id: 9_1038_cac
+      - title: ANEC
+        description: Annals of Noninvasive Electrocardiology
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/anec/ANEC%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/ANEC
+        target: newtab
+        id: 10_1038_anec
+  - name: Yuri Wang
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: PED4
+        description: Pediatric Investigation
+        icon: https://mc.manuscriptcentral.com/societyimages/ped4/PED4_en_US.jpg
+        url: https://mc.manuscriptcentral.com/ped4
+        target: newtab
+        id: 0_854_ped
+      - title: CRJ
+        description: The Clinical Respiratory Journal
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/crj/CRJ_Cover_OA_en_US.png
+        url: https://mc.manuscriptcentral.com/crj
+        target: newtab
+        id: 1_854_crj
+      - title: JCPT
+        description: Journal of Clinical Pharmacy and Therapeutics
+        icon: https://mc.manuscriptcentral.com/societyimages/jcpt/jcpt_cover.gif
+        url: https://mc.manuscriptcentral.com/jcpt
+        target: newtab
+        id: 2_854_jcpt
+      - title: BDD
+        description: Biopharmaceutics and Drug Disposition
+        icon: https://mc.manuscriptcentral.com/societyimages/bdd/BDD.gif
+        url: https://mc.manuscriptcentral.com/bdd
+        target: newtab
+        id: 3_854_bdd
+  - name: Wanshu Zhang
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: CAC2
+        description: Cancer Communication
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/cac2/CAC2_final%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/CAC2
+        target: newtab
+        id: 0_1166_cac
+      - title: JGM
+        description: Generic Medicines
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/jgm/JGM_frontcover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/jgm
+        id: 1_1166_jgm
+  - name: Tina Wang
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: JCLA
+        description: Journal of Clinical Laboratory Analysis
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/jcla/JCLA_cover_en_US.png
+        url: https://mc.manuscriptcentral.com/jcla
+        target: newtab
+        id: 0_825_jcla
+      - title: IBRA
+        description: Ibrain
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/ibra/IbrainCover_en_US.png
+        url: https://mc.manuscriptcentral.com/ibra
+        target: newtab
+        id: 1_825_ibra
+  - name: Melody Zhang
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - title: ANEC
+        description: Annals of Noninvasive Electrocardiology
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/anec/ANEC%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/anec
+        id: 0_1154_anec
+      - title: JDB
+        description: Journal of Diabetes
+        icon: https://mc.manuscriptcentral.com/societyimages/jdb/JDB_en_US.jpg
+        url: https://mc.manuscriptcentral.com/jdb
+        id: 1_1154_jdb
+      - title: AME2
+        description: Animal Models and Experimental Medicine
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/amem/ame212219_en_US.jpg
+        url: https://mc.manuscriptcentral.com/amem
+        target: newtab
+        id: 2_1154_ame
+      - title: AGM2
+        description: Aging Medicine
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/agm2/AGM2%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/agm2?2
+        target: newtab
+        id: 3_1154_agm
+      - title: CAI2
+        description: Cancer Innovation
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/cancerinnovation/CAI2%20new%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/cancerinnovation
+        target: newtab
+        id: 4_1154_cai
+      - title: HCS2
+        description: Health Care Science
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/healthcarescience/HCS2%20new%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/healthcarescience
+        target: newtab
+        id: 5_1154_hcs
+  - name: Wendy Wang
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: HSR
+        description: Health Services Research
+        icon: https://mc.manuscriptcentral.com/societyimages/hsr/hsr_login.gif
+        url: https://mc.manuscriptcentral.com/hsr
+        target: newtab
+        id: 0_948_hsr
+  - name: Yufan Zhang
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: MSP2
+        description: Malignancy Spectrum
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/malignancyspectrum/MSP2_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/malignancyspectrum
+        id: 0_1051_msp
+  - name: Zhe Liu
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: NEP3
+        description: Neuroprotection
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/neup/NEP3_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/neup
+        id: 0_625_nep
+      - title: NPL3
+        description: Nursing Plus
+        url: https://mc.manuscriptcentral.com/nursingplus
+        target: newtab
+        id: 1_625_npl
+  - name: Zhenzhu Wan
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: JCLA
+        description: Journal of Clinical Laboratory Analysis
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/jcla/JCLA_cover_en_US.png
+        url: https://mc.manuscriptcentral.com/jcla
+        target: newtab
+        id: 0_1074_jcla
+      - title: PRM2
+        description: Precision Medical Sciences
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/prm2/WeChat%20Screenshot_20190925164510_en_US.jpg
+        url: https://mc.manuscriptcentral.com/prm2
+        target: newtab
+        id: 1_1074_prm
+      - title: CDD
+        description: Journal of Digestive Diseases
+        icon: https://mc.manuscriptcentral.com/societyimages/jdd/cdd.jpg
+        url: https://mc.manuscriptcentral.com/jdd?4
+        target: newtab
+        id: 2_1074_cdd
+      - title: ASH
+        description: Surgical Practice
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/ash/ASH%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/ash
+        id: 3_1074_ash
+  - name: Qian Chen
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: HSR
+        description: Health Services Research
+        icon: https://mc.manuscriptcentral.com/societyimages/hsr/hsr_login.gif
+        url: https://mc.manuscriptcentral.com/hsr
+        target: newtab
+        id: 0_807_hsr
+      - title: Cancer Medicine
+        description: Cancer Medicine
+        icon: ''
+        url: https://mc.manuscriptcentral.com/cancermedicine?1
+        id: 1_807_cancermedicine
