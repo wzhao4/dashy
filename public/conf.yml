@@ -1,5 +1,15 @@
----
 appConfig:
+  auth:
+    users:
+      - user: admin
+        hash: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+        type: admin
+      - user: jiayi Huang
+        hash: d67fd5b313897e71c9765166550298383056c28306f3d5d8b97056e940083a59
+        type: normal
+      - user: yuri Wang
+        hash: f93f4b1aa0885ef474f8a868197a3fcd26c1bd463e33e7926e4f3687c30d13ee
+        type: normal
   theme: dracula
   layout: auto
   iconSize: large
@@ -78,6 +88,24 @@ sections:
         url: https://mc.manuscriptcentral.com/aac-journal
         target: newtab
         id: 3_1033_aac
+      - title: CNS
+        description: CNS Neuroscience and Therapeutics
+        icon: >-
+          https://onlinelibrary.wiley.com/cms/attachment/27862e51-5549-4787-8d98-87f7aa0c920a/cns.2018.24.issue-9.cover.gif
+        url: https://mc.manuscriptcentral.com/cnsdr
+        id: 4_1033_cns
+      - title: AJCO
+        description: AJCO Clinical Oncology
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/apjco/AJCOcover_en_US.png
+        url: https://mc.manuscriptcentral.com/apjco
+        id: 5_1033_ajco
+      - title: MSP2
+        description: Malignancy Spectrum
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/malignancyspectrum/MSP2_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/malignancyspectrum
+        id: 6_1033_msp
     displayData:
       sortBy: default
       rows: 1
@@ -196,6 +224,25 @@ sections:
         url: https://mc.manuscriptcentral.com/bdd
         target: newtab
         id: 3_854_bdd
+      - title: JEBM
+        description: Journal of Evidence-Based Medicine
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/journalebm/cover_en_US.gif
+        url: https://mc.manuscriptcentral.com/journalebm
+        id: 4_854_jebm
+      - title: CDD
+        description: Journal of Digestive Diseases
+        icon: https://mc.manuscriptcentral.com/societyimages/jdd/cdd.jpg
+        url: https://mc.manuscriptcentral.com/jdd?4
+        target: newtab
+        id: 5_854_cdd
+      - title: PRM2
+        description: Precision Medical Sciences
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/prm2/WeChat%20Screenshot_20190925164510_en_US.jpg
+        url: https://mc.manuscriptcentral.com/prm2
+        target: newtab
+        id: 6_854_prm
   - name: Wanshu Zhang
     displayData:
       sortBy: default
@@ -216,7 +263,48 @@ sections:
         icon: >-
           https://mc.manuscriptcentral.com/societyimages/jgm/JGM_frontcover_en_US.jpg
         url: https://mc.manuscriptcentral.com/jgm
+        target: newtab
         id: 1_1166_jgm
+      - title: CEP
+        description: Cephalalgia Portal
+        url: https://mc.manuscriptcentral.com/cep
+        target: newtab
+        id: 2_1166_cep
+      - title: RAI2
+        description: Rheumatology & Autoimmunity
+        icon: https://mc.manuscriptcentral.com/societyimages/rai/Logo_en_US.jpg
+        url: https://mc.manuscriptcentral.com/rai
+        target: newtab
+        id: 3_1166_rai
+      - title: CDT3
+        description: Chronic Diseases and Translational Medicine
+        icon: https://mc.manuscriptcentral.com/societyimages/cdtm/BANNER_en_US.jpg
+        url: https://mc.manuscriptcentral.com/cdtm
+        target: newtab
+        id: 4_1166_cdt
+      - title: WJO2
+        description: World Journal of Otorhinolaryngology - Head and Neck Surgery
+        icon: https://mc.manuscriptcentral.com/societyimages/wjo/WJO_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/wjo
+        target: newtab
+        id: 5_1166_wjo
+      - title: POH2
+        description: Portal Hypertension & Cirrhosis
+        icon: https://mc.manuscriptcentral.com/societyimages/phc/PHC_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/phc
+        target: newtab
+        id: 6_1166_poh
+      - title: NEP3
+        description: Neuroprotection
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/neup/NEP3_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/neup
+        id: 7_1166_nep
+      - title: NPL3
+        description: Nursing Plus
+        url: https://mc.manuscriptcentral.com/nursingplus
+        target: newtab
+        id: 8_1166_npl
   - name: Tina Wang
     displayData:
       sortBy: default
@@ -225,13 +313,13 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: JCLA
-        description: Journal of Clinical Laboratory Analysis
+      - title: MBA2
+        description: MedComm - Biomaterials and Applications
         icon: >-
-          https://mc.manuscriptcentral.com/societyimages/jcla/JCLA_cover_en_US.png
-        url: https://mc.manuscriptcentral.com/jcla
+          https://mc.manuscriptcentral.com/societyimages/medcomm-biomat/MBA2_ScholarOnev2_en_US.jpg
+        url: https://mc.manuscriptcentral.com/medcomm-biomat
         target: newtab
-        id: 0_825_jcla
+        id: 0_825_mba
       - title: IBRA
         description: Ibrain
         icon: >-
@@ -239,6 +327,43 @@ sections:
         url: https://mc.manuscriptcentral.com/ibra
         target: newtab
         id: 1_825_ibra
+      - title: MCO2
+        description: MedComm
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/medcomm/MCO2_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/medcomm
+        id: 2_825_mco
+      - title: MEF2
+        description: MedComm - Future Medicine
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/medcomm-futmed/MEF2_ScholarOne_en_US.jpg
+        url: https://mc.manuscriptcentral.com/medcomm-futmed
+        id: 3_825_mef
+      - title: MOG2
+        description: MedComm - Oncology
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/medcomm-oncology/MOG2_ScholarOne_en_US.jpg
+        url: https://mc.manuscriptcentral.com/medcomm-oncology
+        id: 4_825_mog
+      - title: CTM2
+        description: Clinical and Translational Medicine
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/ctm2/CTM2_final_en_US.jpg
+        url: https://mc.manuscriptcentral.com/ctm2
+        id: 5_825_ctm
+      - title: CTD2
+        description: Clinical and Translational Discovery
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/ctd2/ctd2.v2.2.cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/ctd2
+        id: 6_825_ctd
+      - title: JCLA
+        description: Journal of Clinical Laboratory Analysis
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/jcla/JCLA_cover_en_US.png
+        url: https://mc.manuscriptcentral.com/jcla
+        target: newtab
+        id: 7_825_jcla
   - name: Melody Zhang
     displayData:
       sortBy: default
@@ -247,45 +372,50 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - title: ANEC
-        description: Annals of Noninvasive Electrocardiology
-        icon: >-
-          https://mc.manuscriptcentral.com/societyimages/anec/ANEC%20cover_en_US.jpg
-        url: https://mc.manuscriptcentral.com/anec
-        id: 0_1154_anec
-      - title: JDB
-        description: Journal of Diabetes
-        icon: https://mc.manuscriptcentral.com/societyimages/jdb/JDB_en_US.jpg
-        url: https://mc.manuscriptcentral.com/jdb
-        id: 1_1154_jdb
       - title: AME2
         description: Animal Models and Experimental Medicine
         icon: >-
           https://mc.manuscriptcentral.com/societyimages/amem/ame212219_en_US.jpg
         url: https://mc.manuscriptcentral.com/amem
-        target: newtab
-        id: 2_1154_ame
+        id: 0_1154_ame
+      - title: JDB
+        description: Journal of Diabetes
+        icon: https://mc.manuscriptcentral.com/societyimages/jdb/JDB_en_US.jpg
+        url: https://mc.manuscriptcentral.com/jdb
+        id: 1_1154_jdb
       - title: AGM2
         description: Aging Medicine
         icon: >-
           https://mc.manuscriptcentral.com/societyimages/agm2/AGM2%20cover_en_US.jpg
         url: https://mc.manuscriptcentral.com/agm2?2
         target: newtab
-        id: 3_1154_agm
+        id: 2_1154_agm
       - title: CAI2
         description: Cancer Innovation
         icon: >-
           https://mc.manuscriptcentral.com/societyimages/cancerinnovation/CAI2%20new%20cover_en_US.jpg
         url: https://mc.manuscriptcentral.com/cancerinnovation
         target: newtab
-        id: 4_1154_cai
+        id: 3_1154_cai
       - title: HCS2
         description: Health Care Science
         icon: >-
           https://mc.manuscriptcentral.com/societyimages/healthcarescience/HCS2%20new%20cover_en_US.jpg
         url: https://mc.manuscriptcentral.com/healthcarescience
         target: newtab
-        id: 5_1154_hcs
+        id: 4_1154_hcs
+      - title: ASH
+        description: Surgical Practice
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/ash/ASH%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/ash
+        id: 5_1154_ash
+      - title: ANEC
+        description: Annals of Noninvasive Electrocardiology
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/anec/ANEC%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/ANEC?8
+        id: 6_1154_anec
   - name: Wendy Wang
     displayData:
       sortBy: default
@@ -314,6 +444,12 @@ sections:
           https://mc.manuscriptcentral.com/societyimages/malignancyspectrum/MSP2_final_en_US.jpg
         url: https://mc.manuscriptcentral.com/malignancyspectrum
         id: 0_1051_msp
+      - title: ANEC
+        description: Annals of Noninvasive Electrocardiology
+        icon: >-
+          https://mc.manuscriptcentral.com/societyimages/anec/ANEC%20cover_en_US.jpg
+        url: https://mc.manuscriptcentral.com/ANEC?8
+        id: 1_1051_anec
   - name: Zhe Liu
     displayData:
       sortBy: default
