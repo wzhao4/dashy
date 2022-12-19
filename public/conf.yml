@@ -60,8 +60,6 @@ pageInfo:
 sections:
   - name: Jiayi Huang
     icon: ''
-    displayData:
-      showForUsers: [jiayi Huang]
     items:
       - title: OS
         description: Orthopaedic Surgery
@@ -109,8 +107,6 @@ sections:
         url: https://mc.manuscriptcentral.com/malignancyspectrum
         id: 6_1033_msp
   - name: Yuri Wang
-    displayData:
-      showForUsers: [yuri Wang]
     items:
       - title: PED4
         description: Pediatric Investigation
