@@ -34,6 +34,12 @@ appConfig:
       - user: yuzhang
         hash: b0e364f8164a01758a6ab072eea39502618078772f75ba6128d077b5eec745d1
         type: normal
+      - user: sixiao
+        hash: 4d56acf0b62992a86210c04ba6a11a87ddc58b247adfe82b5ddcad0f660f75ad
+        type: normal
+      - user: miliu
+        hash: bd6a059adba4c4899b6ab2b4217243c7699b824aa973ed9ecf51558c7d739e15
+        type: normal        
     enableGuestAccess: false
     enableKeycloak: false
   theme: dracula
