@@ -4,12 +4,38 @@ appConfig:
       - user: admin
         hash: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
         type: admin
-      - user: jiayi Huang
-        hash: d67fd5b313897e71c9765166550298383056c28306f3d5d8b97056e940083a59
+      - user: jihuang
+        hash: 787af0d2fd46ee9463e4a7e72c89c3615a9ac192af6547c6ee2c5532129b9412
         type: normal
-      - user: yuri Wang
-        hash: f93f4b1aa0885ef474f8a868197a3fcd26c1bd463e33e7926e4f3687c30d13ee
+      - user: ywang
+        hash: 9455d168c9b54847a86e8ceb4bd25a13cd87f93ffd83dd03139f82ecdea2e592
         type: normal
+      - user: twang
+        hash: dd837cdf5d452d8ac313276073e7b2b89a4394ec139e57af54d2e5672f18f79a
+        type: normal
+      - user: zwan
+        hash: b236307dc75521e4077e66fce6860f246ba9e0eba37b3a4f7e71d44b67e23689
+        type: normal
+      - user: wwang
+        hash: 2a382b96dcf6de6c8d46fce339ddecfb052a5c5d25127afc2944eead0cffbaa8
+        type: normal
+      - user: qchen
+        hash: d4f892954d964fe49b214580a319e4732aaedf0f35967adc881df32a9423488a
+        type: normal
+      - user: wazhang
+        hash: 2e5ee2821cae7f398b6f3e7230079e7dd70c5f26772f1d8e3d9af94b53a161a0
+        type: normal
+      - user: mezhang
+        hash: 171d24f8e15a34946b6e9c5c84bca41447ecf7e0bb963a75f9680db9dc203a6d
+        type: normal
+      - user: zhliu
+        hash: 37f641a4a6f0a128d660e2d23c2dbcdd256523b6178357bb7a605b4c3541bc7d
+        type: normal
+      - user: yuzhang
+        hash: b0e364f8164a01758a6ab072eea39502618078772f75ba6128d077b5eec745d1
+        type: normal
+    enableGuestAccess: false
+    enableKeycloak: false
   theme: dracula
   layout: auto
   iconSize: large
@@ -33,7 +59,7 @@ appConfig:
     hideHeading: false
     hideNav: true
     hideSearch: false
-    hideSettings: true
+    hideSettings: false
     hideFooter: false
   showSplashScreen: false
   preventWriteToDisk: false
@@ -280,7 +306,7 @@ sections:
       sortBy: default
       rows: 1
       cols: 1
-      collapsed: true
+      collapsed: false
       hideForGuests: true
     items:
       - title: AME2
