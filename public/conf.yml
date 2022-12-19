@@ -108,12 +108,6 @@ sections:
           https://mc.manuscriptcentral.com/societyimages/malignancyspectrum/MSP2_final_en_US.jpg
         url: https://mc.manuscriptcentral.com/malignancyspectrum
         id: 6_1033_msp
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
   - name: Yuri Wang
     displayData:
       showForUsers: [yuri Wang]
@@ -168,7 +162,7 @@ sections:
       rows: 1
       cols: 1
       collapsed: false
-      hideForGuests: false
+      hideForGuests: true
     items:
       - title: CAC2
         description: Cancer Communication
@@ -221,6 +215,8 @@ sections:
         id: 7_1166_nep
       - title: NPL3
         description: Nursing Plus
+        icon: >-
+          https://onlinelibrary.wiley.com/pb-assets/assets/2771179X/Nursing%20Plus%20cover-1649401720.jpg
         url: https://mc.manuscriptcentral.com/nursingplus
         target: newtab
         id: 8_1166_npl
@@ -230,7 +226,7 @@ sections:
       rows: 1
       cols: 1
       collapsed: false
-      hideForGuests: false
+      hideForGuests: true
     items:
       - title: MBA2
         description: MedComm - Biomaterials and Applications
@@ -289,7 +285,7 @@ sections:
       rows: 1
       cols: 1
       collapsed: true
-      hideForGuests: false
+      hideForGuests: true
     items:
       - title: AME2
         description: Animal Models and Experimental Medicine
@@ -341,7 +337,7 @@ sections:
       rows: 1
       cols: 1
       collapsed: false
-      hideForGuests: false
+      hideForGuests: true
     items:
       - title: HSR
         description: Health Services Research
@@ -355,7 +351,7 @@ sections:
       rows: 1
       cols: 1
       collapsed: false
-      hideForGuests: false
+      hideForGuests: true
     items:
       - title: MSP2
         description: Malignancy Spectrum
@@ -375,7 +371,7 @@ sections:
       rows: 1
       cols: 1
       collapsed: false
-      hideForGuests: false
+      hideForGuests: true
     items:
       - title: NEP3
         description: Neuroprotection
@@ -385,6 +381,8 @@ sections:
         id: 0_625_nep
       - title: NPL3
         description: Nursing Plus
+        icon: >-
+          https://onlinelibrary.wiley.com/pb-assets/assets/2771179X/Nursing%20Plus%20cover-1649401720.jpg
         url: https://mc.manuscriptcentral.com/nursingplus
         target: newtab
         id: 1_625_npl
@@ -394,7 +392,7 @@ sections:
       rows: 1
       cols: 1
       collapsed: false
-      hideForGuests: false
+      hideForGuests: true
     items:
       - title: JCLA
         description: Journal of Clinical Laboratory Analysis
@@ -428,7 +426,7 @@ sections:
       rows: 1
       cols: 1
       collapsed: false
-      hideForGuests: false
+      hideForGuests: true
     items:
       - title: HSR
         description: Health Services Research
