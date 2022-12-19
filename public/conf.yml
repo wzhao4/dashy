@@ -60,6 +60,8 @@ pageInfo:
 sections:
   - name: Jiayi Huang
     icon: ''
+    displayData:
+      showForUsers: [jiayi Huang]
     items:
       - title: OS
         description: Orthopaedic Surgery
@@ -114,11 +116,7 @@ sections:
       hideForGuests: false
   - name: Yuri Wang
     displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
+      showForUsers: [yuri Wang]
     items:
       - title: PED4
         description: Pediatric Investigation
