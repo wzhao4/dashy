@@ -4,6 +4,9 @@ appConfig:
       - user: admin
         hash: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
         type: admin
+      - user: dzhang
+        hash: bee44ad877252397e27adc0e2556dfb7a4fa8bac5ad936011f50c8f4c78a6cf3
+        type: admin        
       - user: jihuang
         hash: 787af0d2fd46ee9463e4a7e72c89c3615a9ac192af6547c6ee2c5532129b9412
         type: normal
